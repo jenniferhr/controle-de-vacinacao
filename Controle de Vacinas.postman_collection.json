@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "c8960215-e63f-4ec1-9853-6f1ab28fa246",
+		"name": "Controle de Vacinas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createVaccine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"HPV\",\r\n    \"expected_date\": \"01/12/2021\",\r\n    \"vaccinated\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vaccines",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vaccines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllVaccines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/vaccines",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vaccines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVaccine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/vaccines/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vaccines",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateVaccinated",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vaccinated\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vaccines/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vaccines",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
