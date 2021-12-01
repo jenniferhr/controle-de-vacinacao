@@ -1,6 +1,9 @@
 const express = require("express")
 const app = express()
 
+const index = require("./routes/index")
+const vaccines = require("./routes/vaccines")
+
 app.use(express.json())
 
 app.use(function (req, res, next) {
@@ -21,5 +24,8 @@ app.options("/*", (req, res) => {
     );
     res.send("send some thing whatever")
 })
+
+app.use("/", index)
+app.use("/vaccines", vaccines)
 
 module.exports = { app }
