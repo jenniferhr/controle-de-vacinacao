@@ -2,7 +2,7 @@
 
 Desafio final do curso Women Can Code - API criada em Node.Js para controle de vacinação.
 
-Deploy feito no Heroku - [Link](https://controle-de-vacinacao.herokuapp.com/)
+Deploy feito no Heroku - [Link de acesso](https://controle-de-vacinacao.herokuapp.com/)
 
 | Método | Rota | Função | 
 |--|--|--|
